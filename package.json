@@ -1,0 +1,34 @@
+{
+  "name": "tetris-clone",
+  "version": "1.0.0",
+  "description": "Project i've made for the First round at 100DaysOfCode",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedronm/tetris-clone.git"
+  },
+  "keywords": [
+    "Tetris",
+    "Game",
+    "Phaser",
+    "#100DaysOfCode"
+  ],
+  "author": "Pedro Moraes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedronm/tetris-clone/issues"
+  },
+  "homepage": "https://github.com/pedronm/tetris-clone#readme",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "phaser": "^3.24.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
