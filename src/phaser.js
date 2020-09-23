@@ -24,14 +24,14 @@ function preload ()
 
     this.load.image('sky', 'assets/skies/space3.png');
     this.load.image('logo', 'assets/sprites/phaser3-logo.png');
-    this.load.image('red', 'assets/particles/red.png');
+    this.load.image('blue-fare', 'assets/particles/blue-flare.png');
 }
 
 function create ()
 {
-    this.add.image(400, 300, 'sky');
+    this.add.image(0, 0, 'sky');
 
-    var particles = this.add.particles('red');
+    var particles = this.add.particles('blue-fare');
 
     var emitter = particles.createEmitter({
         speed: 100,
@@ -41,8 +41,9 @@ function create ()
 
     var logo = this.physics.add.image(400, 100, 'logo');
 
-    logo.setVelocity(100, 200);
-    logo.setBounce(1, 1);
+    logo.setVelocity(100, 0);
+    // O objeto só vai 'quicar'  na vertical
+    //logo.setBounce(0, 1);
     logo.setCollideWorldBounds(true);
 
     emitter.startFollow(logo);
